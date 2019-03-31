@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #34495e;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.red{
+    background-color: #e74c3c;
+}
+
+.white{
+    background-color: #ecf0f1;
+}
+
+.blue{
+    background-color: #2980b9;
+}
+
+.container{
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.rotate{
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+    /* transform: rotateY(45deg); */
+}
+
+.translate{
+    transform: translate(100px, 150px);
+    /* transform: translateX(100px); */
+    /* transform: translateY(150px); */
+}
+
+.scale{
+    transform: scale(0.5, 2);
+    /* transform: scaleX(0.5); */
+    /* transform: scaleY(0.5); */
+}
+
+
+.skew{
+    transform: skew(20deg, 30deg);
+    /* transform: skewX(20deg); */
+    /* transform: skewY(30deg); */
+}
+
+.matrix{
+    /* transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    /* transform: matrix(0.2,20,30,0.1,10,200); */
+}
+
+#spinDiv{
+    transition: transform 2s, width 2s, background-color 2s, height 2s;
+    /* transition-delay: 2s; */
+    transition-timing-function: ease-in-out;
+}
+
+.rotateSpin{
+    width: 600px;
+    transform: rotate(360deg);
+    height: 300px;
+}
